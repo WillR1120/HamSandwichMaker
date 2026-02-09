@@ -1,4 +1,5 @@
 ### Data ###
+# Ham Sandwich Maker Machine Program
 
 recipes = {
     "small": {
@@ -51,6 +52,8 @@ class SandwichMachine:
                 return False
         return True
 
+    # This function checks if enough ingredients are available
+
     def process_coins(self):
         """Returns the total calculated from coins inserted.
            Hint: include input() function here, e.g. input("how many quarters?: ")"""
@@ -62,6 +65,8 @@ class SandwichMachine:
 
         total = dollars * 1 + half_dollars * 0.5 + quarters * 0.25 + nickels * 0.05
         return total
+
+    # This function calculates total money inserted
 
     def transaction_result(self, coins, cost):
         """Return True when the payment is accepted, or False if money is insufficient.
@@ -80,6 +85,7 @@ class SandwichMachine:
         for item in order_ingredients:
             self.machine_resources[item] -= order_ingredients[item]
         print(f"{sandwich_size} sandwich is ready. Bon appetit!")
+# This function deducts ingredients after a successful transaction
 
 
 ### Main Program ###
