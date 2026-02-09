@@ -50,6 +50,8 @@ class SandwichMachine:
             if ingredients[item] > self.machine_resources.get(item, 0):
                 print(f"Sorry there is not enough {item}.")
                 return False
+            # Check if ingredients are enough for order
+
         return True
 
     # This function checks if enough ingredients are available
