@@ -64,6 +64,7 @@ class SandwichMachine:
         half_dollars = int(input("how many half dollars?: "))
         quarters = int(input("how many quarters?: "))
         nickels = int(input("how many nickels?: "))
+        # Calculate total money inserted
 
         total = dollars * 1 + half_dollars * 0.5 + quarters * 0.25 + nickels * 0.05
         return total
