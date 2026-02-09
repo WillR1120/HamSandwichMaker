@@ -89,6 +89,7 @@ class SandwichMachine:
             self.machine_resources[item] -= order_ingredients[item]
         print(f"{sandwich_size} sandwich is ready. Bon appetit!")
 # This function deducts ingredients after a successful transaction
+# Deduct ingredients after successful transaction
 
 
 ### Main Program ###
